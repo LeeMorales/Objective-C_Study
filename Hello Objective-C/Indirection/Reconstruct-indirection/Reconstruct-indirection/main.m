@@ -6,7 +6,7 @@
 //  Copyright © 2019 Lee Morales. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <objc/runtime.h>
 
 int main(int argc, const char * argv[]){
     int count = 1024000;
