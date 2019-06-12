@@ -94,6 +94,44 @@ void drawEgg (ShapeRect bounds, ShapeColor fillColor)
     
 } // drawEgg
 
+@interface Triangle : NSObject
+{
+    ShapeColor  fillColor;
+    ShapeRect   bounds;
+}
+
+- (void) setFillColor: (ShapeColor) fillColor;
+
+- (void) setBounds: (ShapeRect) bounds;
+
+- (void) draw;
+
+@end // Triangle
+
+
+@implementation Triangle
+
+- (void) setFillColor: (ShapeColor) c
+{
+    fillColor = c;
+} // setFillColor
+
+
+- (void) setBounds: (ShapeRect) b
+{
+    bounds = b;
+} // setBounds
+
+
+- (void) draw
+{
+    NSLog (@"drawing a triangle at (%d %d %d %d) in %@",
+           bounds.x, bounds.y,
+           bounds.width, bounds.height,
+           colorName(fillColor));
+} // draw
+
+@end // Triangle
 
 // --------------------------------------------------
 // Draw the shapes
