@@ -92,3 +92,43 @@ void drawEgg (ShapeRect bounds, ShapeColor fillColor){
           colorName(fillColor));
 }
 @end
+void drawShapes (Shape shapes[], int count) {
+    for (int i = 0; i < count; i++) {
+        switch (shapes[i].type){
+            case kCircle:
+                drawCircle (shapes[i].bounds, shapes[i].fillColor);
+                break;
+                
+            case kRectangle:
+                drawRectangle (shapes[i].bounds, shapes[i].fillColor);
+                break;
+                
+            case kOblateSpheroid:
+                drawEgg (shapes[i].bounds, shapes[i].fillColor);
+                break;
+        }
+    }
+}
+
+int main (int argc, const char *argv[]){
+    Shape shapes[3];
+    
+    ShapeRect rect0 = {0, 0, 10, 30};
+    shapes[0].type = kCircle;
+    shapes[0].fillColor = kRedColor;
+    shapes[0].bounds = rect0;
+    
+    ShapeRect rect1 = {30, 40, 50, 60};
+    shapes[1].type = kCircle;
+    shapes[1].fillColor = kRedColor;
+    shapes[1].bounds = rect1;
+    
+    ShapeRect rect2 = {15, 18, 37, 29};
+    shapes[2].type = kCircle;
+    shapes[2].fillColor = kRedColor;
+    shapes[2].bounds = rect2;
+    
+    drawShapes(shapes, 3);
+    
+    return (0);
+}
