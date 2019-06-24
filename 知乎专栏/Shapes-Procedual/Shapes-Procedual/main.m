@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-
+//---------------------------------------------------
+//定义类型
 typedef enum{
     kCircle,
     kRectangle,
@@ -29,7 +30,8 @@ typedef struct {
     ShapeColor fillColor;
     ShapeRect bounds;
 } Shape;
-
+//------------------------------------------------------
+//定义颜色
 NSString *colorName (ShapeColor colorName){
     switch (colorName){
         case kRedColor:
