@@ -26,7 +26,7 @@
 @implementation Engine
 
 -(NSString *) description{
-    return (@"I am a V8 Engine");
+    return (@"V8");
 }
 
 @end
@@ -87,6 +87,14 @@ int main (int argc, const char * argv[]){
     Car *car;
     car = [Car new];
     [car print];
+    
+    Engine *engine = [Engine new];
+    [car setEngine:engine];
+    NSLog(@"The car's engine is %@", [car engine]);
+    
+    Tire *tire = [Tire new];
+    [car setTire:tire atIndex:2];
+    NSLog(@"tire number two is %@", [car tireAtIndex:2]);
     return (0);
 }
 
