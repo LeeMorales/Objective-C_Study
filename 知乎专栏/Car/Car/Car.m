@@ -37,8 +37,9 @@
 }
 -(Engine *) engine;
 -(void) setEngine: (Engine *) newEngine;
+-(Tire *) tireAtIndex: (int) index;
+-(void) setTire: (Tire *) tire atIndex :(int) index;
 -(void) print;
-
 @end
 
 @implementation Car
@@ -66,6 +67,20 @@
     engine = newEngine;
 }
 
+-(void) setTire: (Tire *) tire atIndex :(int) index{
+    if (index < 0 || index > 3) {
+        NSLog (@"bad index (%d) in setTire:atIndex:", index);
+        exit(1);
+    }
+    tires[index] = tire;
+}
+-(Tire *) tireAtIndex: (int) index{
+    if (index < 0 || index > 3) {
+        NSLog(@"bad index (%d)in 'tireAtIndex:'", index);
+        exit(1);
+    }
+    return (tires[index]);
+}
 @end
 
 int main (int argc, const char * argv[]){
