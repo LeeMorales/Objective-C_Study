@@ -84,17 +84,14 @@
 @end
 
 int main (int argc, const char * argv[]){
-    Car *car;
-    car = [Car new];
-    [car print];
-    
+    Car *car = [Car new];
     Engine *engine = [Engine new];
-    [car setEngine:engine];
-    NSLog(@"The car's engine is %@", [car engine]);
-    
-    Tire *tire = [Tire new];
-    [car setTire:tire atIndex:2];
-    NSLog(@"tire number two is %@", [car tireAtIndex:2]);
+    [car setEngine: engine];
+    for (int i = 0; i < 4; i++){
+        Tire *tire = [Tire new];
+        [car setTire:tire atIndex:i];
+    }
+    [car print];
     return (0);
 }
 
