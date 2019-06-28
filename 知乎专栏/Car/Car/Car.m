@@ -11,6 +11,9 @@
 
 @end
 
+@interface AllWeatherRadial : Tire
+@end
+
 @implementation Tire
 
 -(NSString *) description {
@@ -19,16 +22,28 @@
 
 @end
 
-@interface Engine : NSObject
+@implementation AllWeatherRadial
+-(NSString *) description {
+    return (@"I am a tire for rain and shine");
+}
+@end
 
+@interface Engine : NSObject
+@end
+
+@interface V8 : Engine
 @end
 
 @implementation Engine
-
 -(NSString *) description{
-    return (@"V8");
+    return (@"Engine");
 }
+@end
 
+@implementation V8
+-(NSString *) description{
+    return (@"I am a V8! Powerrrrrrrr");
+}
 @end
 
 @interface Car : NSObject{
@@ -85,10 +100,10 @@
 
 int main (int argc, const char * argv[]){
     Car *car = [Car new];
-    Engine *engine = [Engine new];
+    Engine *engine = [V8 new];
     [car setEngine: engine];
     for (int i = 0; i < 4; i++){
-        Tire *tire = [Tire new];
+        Tire *tire = [AllWeatherRadial new];
         [car setTire:tire atIndex:i];
     }
     [car print];
