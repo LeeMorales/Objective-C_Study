@@ -7,20 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-@interface Tire : NSObject
-
-@end
+#import "Tire.h"
+#import "Engine.h"
 
 @interface AllWeatherRadial : Tire
 @end
 
-@implementation Tire
-
--(NSString *) description {
-    return (@"I am a tire" );
-}
-
-@end
 
 @implementation AllWeatherRadial
 -(NSString *) description {
@@ -28,17 +20,11 @@
 }
 @end
 
-@interface Engine : NSObject
-@end
 
 @interface V8 : Engine
 @end
 
-@implementation Engine
--(NSString *) description{
-    return (@"Engine");
-}
-@end
+
 
 @implementation V8
 -(NSString *) description{

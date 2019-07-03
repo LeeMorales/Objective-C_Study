@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		418E7D2722CB56F4004925A1 /* Tire.m in Sources */ = {isa = PBXBuildFile; fileRef = 418E7D2622CB56F4004925A1 /* Tire.m */; };
+		418E7D2A22CB579B004925A1 /* Engine.m in Sources */ = {isa = PBXBuildFile; fileRef = 418E7D2922CB579B004925A1 /* Engine.m */; };
 		41B05E5E22C3590000F6AE27 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B05E5D22C3590000F6AE27 /* Car.m */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +25,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		418E7D2522CB56F4004925A1 /* Tire.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tire.h; sourceTree = "<group>"; };
+		418E7D2622CB56F4004925A1 /* Tire.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tire.m; sourceTree = "<group>"; };
+		418E7D2822CB579B004925A1 /* Engine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Engine.h; sourceTree = "<group>"; };
+		418E7D2922CB579B004925A1 /* Engine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Engine.m; sourceTree = "<group>"; };
 		41B05E5A22C3590000F6AE27 /* Car */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Car; sourceTree = BUILT_PRODUCTS_DIR; };
 		41B05E5D22C3590000F6AE27 /* Car.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				41B05E5D22C3590000F6AE27 /* Car.m */,
+				418E7D2522CB56F4004925A1 /* Tire.h */,
+				418E7D2622CB56F4004925A1 /* Tire.m */,
+				418E7D2822CB579B004925A1 /* Engine.h */,
+				418E7D2922CB579B004925A1 /* Engine.m */,
 			);
 			path = Car;
 			sourceTree = "<group>";
@@ -121,6 +131,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				41B05E5E22C3590000F6AE27 /* Car.m in Sources */,
+				418E7D2722CB56F4004925A1 /* Tire.m in Sources */,
+				418E7D2A22CB579B004925A1 /* Engine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
