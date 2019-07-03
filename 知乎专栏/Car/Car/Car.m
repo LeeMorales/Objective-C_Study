@@ -7,8 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Tire.h"
-#import "Engine.h"
+#import "Car.h"
 
 @interface AllWeatherRadial : Tire
 @end

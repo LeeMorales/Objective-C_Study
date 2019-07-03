@@ -29,8 +29,9 @@
 		418E7D2622CB56F4004925A1 /* Tire.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tire.m; sourceTree = "<group>"; };
 		418E7D2822CB579B004925A1 /* Engine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Engine.h; sourceTree = "<group>"; };
 		418E7D2922CB579B004925A1 /* Engine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Engine.m; sourceTree = "<group>"; };
-		41B05E5A22C3590000F6AE27 /* Car */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Car; sourceTree = BUILT_PRODUCTS_DIR; };
+		4198D1CD22CCAC7F00F5DB82 /* Car.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
 		41B05E5D22C3590000F6AE27 /* Car.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
+		41D23C6C22CCADB500AAAF6E /* Car */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = Car; path = "/Users/leemorales/Developer/Objective-C_Study/知乎专栏/Car/build/Debug/Car"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,22 +49,14 @@
 			isa = PBXGroup;
 			children = (
 				41B05E5C22C3590000F6AE27 /* Car */,
-				41B05E5B22C3590000F6AE27 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		41B05E5B22C3590000F6AE27 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				41B05E5A22C3590000F6AE27 /* Car */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		41B05E5C22C3590000F6AE27 /* Car */ = {
 			isa = PBXGroup;
 			children = (
 				41B05E5D22C3590000F6AE27 /* Car.m */,
+				4198D1CD22CCAC7F00F5DB82 /* Car.h */,
 				418E7D2522CB56F4004925A1 /* Tire.h */,
 				418E7D2622CB56F4004925A1 /* Tire.m */,
 				418E7D2822CB579B004925A1 /* Engine.h */,
@@ -89,7 +82,7 @@
 			);
 			name = Car;
 			productName = Car;
-			productReference = 41B05E5A22C3590000F6AE27 /* Car */;
+			productReference = 41D23C6C22CCADB500AAAF6E /* Car */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -116,7 +109,7 @@
 				Base,
 			);
 			mainGroup = 41B05E5122C3590000F6AE27;
-			productRefGroup = 41B05E5B22C3590000F6AE27 /* Products */;
+			productRefGroup = 41B05E5122C3590000F6AE27;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
