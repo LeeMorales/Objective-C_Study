@@ -9,7 +9,10 @@
 /* Begin PBXBuildFile section */
 		418E7D2722CB56F4004925A1 /* Tire.m in Sources */ = {isa = PBXBuildFile; fileRef = 418E7D2622CB56F4004925A1 /* Tire.m */; };
 		418E7D2A22CB579B004925A1 /* Engine.m in Sources */ = {isa = PBXBuildFile; fileRef = 418E7D2922CB579B004925A1 /* Engine.m */; };
-		41B05E5E22C3590000F6AE27 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B05E5D22C3590000F6AE27 /* Car.m */; };
+		41B05E5E22C3590000F6AE27 /* CarParts.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B05E5D22C3590000F6AE27 /* CarParts.m */; };
+		41E4438022CDBD2800199F85 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E4437F22CDBD2800199F85 /* Car.m */; };
+		41E4438322CDC24100199F85 /* V8.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E4438222CDC24100199F85 /* V8.m */; };
+		41E4438622CDC37300199F85 /* AllWeatherRadial.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E4438522CDC37300199F85 /* AllWeatherRadial.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,9 +32,14 @@
 		418E7D2622CB56F4004925A1 /* Tire.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tire.m; sourceTree = "<group>"; };
 		418E7D2822CB579B004925A1 /* Engine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Engine.h; sourceTree = "<group>"; };
 		418E7D2922CB579B004925A1 /* Engine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Engine.m; sourceTree = "<group>"; };
-		4198D1CD22CCAC7F00F5DB82 /* Car.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
-		41B05E5D22C3590000F6AE27 /* Car.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
-		41D23C6C22CCADB500AAAF6E /* Car */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = Car; path = "/Users/leemorales/Developer/Objective-C_Study/知乎专栏/Car/build/Debug/Car"; sourceTree = "<absolute>"; };
+		41B05E5D22C3590000F6AE27 /* CarParts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CarParts.m; sourceTree = "<group>"; };
+		41E4437D22CDBB2E00199F85 /* Car */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = Car; path = "/Users/leemorales/Developer/Objective-C_Study/知乎专栏/Car/build/Debug/Car"; sourceTree = "<absolute>"; };
+		41E4437E22CDBD2800199F85 /* Car.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		41E4437F22CDBD2800199F85 /* Car.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
+		41E4438122CDC24100199F85 /* V8.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = V8.h; sourceTree = "<group>"; };
+		41E4438222CDC24100199F85 /* V8.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = V8.m; sourceTree = "<group>"; };
+		41E4438422CDC37300199F85 /* AllWeatherRadial.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AllWeatherRadial.h; sourceTree = "<group>"; };
+		41E4438522CDC37300199F85 /* AllWeatherRadial.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AllWeatherRadial.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +63,13 @@
 		41B05E5C22C3590000F6AE27 /* Car */ = {
 			isa = PBXGroup;
 			children = (
-				41B05E5D22C3590000F6AE27 /* Car.m */,
-				4198D1CD22CCAC7F00F5DB82 /* Car.h */,
+				41B05E5D22C3590000F6AE27 /* CarParts.m */,
+				41E4438122CDC24100199F85 /* V8.h */,
+				41E4438222CDC24100199F85 /* V8.m */,
+				41E4438422CDC37300199F85 /* AllWeatherRadial.h */,
+				41E4438522CDC37300199F85 /* AllWeatherRadial.m */,
+				41E4437E22CDBD2800199F85 /* Car.h */,
+				41E4437F22CDBD2800199F85 /* Car.m */,
 				418E7D2522CB56F4004925A1 /* Tire.h */,
 				418E7D2622CB56F4004925A1 /* Tire.m */,
 				418E7D2822CB579B004925A1 /* Engine.h */,
@@ -82,7 +95,7 @@
 			);
 			name = Car;
 			productName = Car;
-			productReference = 41D23C6C22CCADB500AAAF6E /* Car */;
+			productReference = 41E4437D22CDBB2E00199F85 /* Car */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -123,9 +136,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41B05E5E22C3590000F6AE27 /* Car.m in Sources */,
+				41B05E5E22C3590000F6AE27 /* CarParts.m in Sources */,
+				41E4438322CDC24100199F85 /* V8.m in Sources */,
 				418E7D2722CB56F4004925A1 /* Tire.m in Sources */,
+				41E4438022CDBD2800199F85 /* Car.m in Sources */,
 				418E7D2A22CB579B004925A1 /* Engine.m in Sources */,
+				41E4438622CDC37300199F85 /* AllWeatherRadial.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
